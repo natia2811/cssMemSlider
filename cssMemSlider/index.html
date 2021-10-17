@@ -8,17 +8,16 @@
     <title>Mem Slider</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" href="./assets/favicon.ico">
    
 </head>
 <body>
     <div class="slider-container">
         <div class="slider-wrapper">
         <div class="slider-photos">
-            <div class="slide">
+            <div class="slide active">
                 <img src="./assets/slide1.jpg" alt="slide1" class="slider-img">
             </div>
-            <!--<div class="slide">
+            <div class="slide">
                 <img src="./assets/slide2.jpg" alt="slide2">
             </div>
             <div class="slide">
@@ -26,7 +25,9 @@
             </div>
             <div class="slide">
                 <img src="./assets/slide4.jpg" alt="slide4">
-            </div>-->
+            </div>
+            <div id="btn-prev"></div>
+            <div id="btn-next"></div>
         </div>
         <div class="slider-management">
             <span class="slider-text">Когда полагаешься на чудо...</span>
@@ -34,14 +35,24 @@
             <span class="slider-text">Не расстрайвайся, все получится!</span>
             <span class="slider-text">Когда оставил сюрприз преемникам</span>-->
             <div class="slider-controls">
-                <button class="control-item"></button>
-                <button class="control-item"></button>
-                <button class="control-item"></button>
-                <button class="control-item"></button>
+                <div class="control-item">
+                <button class="btn-item active"></button>
+                </div>
+                <div class="control-item">
+                    <button class="btn-item"></button>
+                    </div>
+                    <div class="control-item">
+                        <button class="btn-item"></button>
+                        </div>
+                        <div class="control-item*">
+                            <button class="btn-item"></button>
+                            </div>
+               
             </div>
         </div>
     </div>
     </div>
+    <script src="./main.js"></script>
 </body>
 
 </html>
