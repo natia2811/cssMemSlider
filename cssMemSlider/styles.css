@@ -96,3 +96,8 @@ html{
   .active {
     display: block;
       }
+    .github-link{
+      font-size: xx-large;
+      text-decoration: none;
+      cursor: pointer;
+    }
