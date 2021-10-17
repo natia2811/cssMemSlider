@@ -84,6 +84,7 @@ html{
       border-radius: 50%;
       background-color: #12cde5;
       cursor: pointer;
+      transition: all 0.4s ease;
   }
   .btn-item:hover{
     background-color: #ffffff;
@@ -92,7 +93,6 @@ html{
     background-color: #030303;
     border: solid 2px#12cde5;
   }
-
   .active {
     display: block;
       }
