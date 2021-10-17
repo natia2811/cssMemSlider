@@ -1,7 +1,8 @@
 const prev = document.getElementById('btn-prev'),
 next = document.getElementById('btn-next'),
 slides = document.querySelectorAll('.slide'),
-dots = document.querySelectorAll('.btn-item');
+dots = document.querySelectorAll('.btn-item'),
+texts = document.querySelectorAll('.slider-text')
 
 let index = 0;
 
@@ -20,14 +21,25 @@ const activeDot = n =>{
     dots[n].classList.add('active');
 }
 
+const activeText = n =>{
+    for(text of texts){
+        text.classList.remove('active');
+    }
+    texts[n].classList.add('active');
+}
+
+
 const prepareCurrentSlide = ind =>{
     activeDot(ind);
     activeSlide(ind);
+    activeText(ind);
 }
 
 dots.forEach((item,indexDot)=>{
     item.addEventListener('click', () =>{
         index = indexDot;
         prepareCurrentSlide(index);
+
+
     })
 })
